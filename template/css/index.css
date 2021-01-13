@@ -1,0 +1,157 @@
+body {
+  background: url("../images/background.jpg") no-repeat center fixed; 
+  background-size: cover;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  color:white;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+
+i {
+  font-size: 185%;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+    header i {
+        padding: 15px 50px 15px 50px;
+    }
+
+#conteneurPresentation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+    #blockAuteur {
+      padding: 25px;
+    }
+
+        h1 {
+            font-size: 650%;
+            margin:0;
+            line-height: 80px;
+        }
+
+        #blockJaponais {
+        display: flex;
+        align-items: center;
+        }
+
+            h2 {
+                font-size: 350%;
+                margin:0;
+                line-height: 50px;
+                font-weight: normal;
+            }
+
+            #blockCarre {
+            display:flex;
+            justify-content: space-around;
+            }
+
+                #carreBleu {
+                background-color: #35b4db;
+                height: 20px;
+                width: 28px;
+                margin: 5px;
+                }
+
+                #carreRose {
+                background-color: #ff0062;
+                height: 20px;
+                width: 28px;
+                margin: 5px;
+                }
+
+        p {
+          font-size: 140%;
+          margin: 0 0 0 10px;
+        }
+
+        #blockButton{
+          text-align: center;
+        }
+        
+            button{
+                background-color: #f26c4f;
+                letter-spacing: 0.5rem;
+                border: none;
+                font-size: 150%;
+                margin: 25px 0 5px 0;
+                padding: 5px 30px 5px 30px;
+                color:white;
+            }
+
+    #blockPortfolios {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+        #blockPortfolios :nth-child(1) {
+            width: 400px;
+            position: relative;
+            left : 75px;
+            z-index: 1;
+        }
+
+        #blockPortfolios :nth-child(2) {
+            position: relative;
+            right: 75px;
+            top:25px;
+            width: 450px;
+        }
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-between;
+}
+
+#reauxSociaux i {
+  padding: 25px 15px 25px 15px;
+}
+
+#logo {
+  width: 100px;
+  padding: 25px;
+}
+
+
+@media screen and (max-width: 1250px) {
+ 
+    #blockPortfolios :nth-child(1) {
+      width: 250px;
+      left:50px;
+    } 
+
+    #blockPortfolios :nth-child(2) {
+      width: 300px;
+      right: 50px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+ 
+  #blockPortfolios :nth-child(1) {
+    width: 150px;
+    left:30px;
+  } 
+
+  #blockPortfolios :nth-child(2) {
+    width: 200px;
+    right: 30px;
+    top:5px;
+  }
+}
